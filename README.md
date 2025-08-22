@@ -78,8 +78,6 @@ reflective AI companion.
 - Chat interface with Solace greeting at startup.
 - Save and load conversations in JSON format.
 - File upload (logs filename into chat history).
-- Progress bar with Solace "soft wake" animation.
-- Streaming word-by-word Solace responses.
 - Model Manager
 - Toolbar menu with:
   • File → Model manager / Save / Load / Upload  
