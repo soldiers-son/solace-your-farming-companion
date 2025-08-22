@@ -1,3 +1,15 @@
+This is my first python project. Since I am a smallcrop farmer, i decided i needed an app that i could log my plants, harvests, and tasks. I couldn't find one that was simple and suited my needs, so i decided to build one myself. 
+
+I previously learned how to code microcontrollers with the Arduino atmega2560, and taught myself a bit of HTML web dev.
+I wanted to give it a shot at extending my programming knowledge, so i commited to working on this project. I've learned
+quite a bit through the process of creating this project. I put my heart into it and spent many hours reading through forums and how-tos.
+I learned not just python basics, but how to create & work with lightweight databases, and troubleshoot many technical errors.
+
+This project took around a solid 3 months to arrive at what i would say finished for now. Its been a fun journey, and I'm ready to move onto what is next. I hope that someone finds this project useful and learns something from it. Please feel free to reach out with any questions you might have.
+
+And a big thank you to all the strangers across the web that have unknowingly been apart of this project. It's made me realize how connected we are here in the 21st century, and how lucky we are to have so many solutions available right in the palm of our hand. Collaboration, contribution, and connection is the only route to salvation. We need each other more than we know.
+
+
 # solace-your-farming-companion
 ====================================================
         Solace – Farming Task Tracker + Ollama GUI
