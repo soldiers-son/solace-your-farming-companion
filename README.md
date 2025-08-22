@@ -4,10 +4,15 @@
 ====================================================
 
 Author: soldiers_son
+
 solace.py Version: 1.0
+
 olloma_gui.py Version: 1.3
+
 Python: 3.11+
+
 Platform: Windows / Linux / Mac
+
 Dependencies: tkinter, customtkinter, bcrypt, sqlite3, requests, sys, json, base64, 
 (ollama), webbrowser, platform, pprint, time, datetime, urlib.parse, urlib.request,
 threading, typing, itertools, filedialog, subprocess, os
