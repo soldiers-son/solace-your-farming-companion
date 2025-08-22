@@ -19,7 +19,7 @@ Author: soldiers_son
 
 solace.py Version: 1.0
 
-olloma_gui.py Version: 1.3
+ollama_gui.py Version: 1.3
 
 Python: 3.11+
 
