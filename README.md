@@ -300,5 +300,7 @@ This project is open source under the MIT License.
 14. Contact
 ----------------------------------------------------
 Author: soldiers_son
+
 GitHub: (https://github.com/soldiers-son?tab=repositories)
+
 Email: (soldiers.son1618@gmail.com)
