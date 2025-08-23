@@ -211,6 +211,80 @@ You can create a custom personality for Solace.
   companion across desktop and embedded 
   systems.
 
+  🌿 Farming / Task Features
+
+- Search & Filter Logs
+
+- Add the ability to filter by plant type, date, or task category.
+
+- Example: “Show me everything I planted last May.”
+
+- Export / Import Data
+
+- Export logs to CSV or JSON for backup.
+
+- Import existing farm data into SQLite.
+
+- Basic Analytics / Summaries
+
+- Count how many of each crop you planted/harvested.
+
+- Simple yield tracking (e.g., “You harvested 23 tomatoes this season.”).
+
+- ask Reminders
+
+- Allow setting reminders (via notifications or just a highlighted log).
+
+- Example: “Water seedlings in 3 days.”
+
+💬 Integration with Ollama GUI
+
+- Contextual Reflection
+
+- Pass farming log entries directly into Ollama as context when you launch ollama_gui.py.
+
+- That way Solace can “recall” your farming activities and reflect with you.
+
+- Example: If you logged “planted basil,” Solace might greet you with “How are your basil seedlings doing today?”
+
+- Direct Log Commands in Chat
+
+- Let the user say “Log that I harvested carrots” inside Ollama chat, and have it write to the SQLite DB.
+
+🎨 User Interface Improvements
+
+- Dark / Light Theme Toggle
+
+- customtkinter supports built-in theme switching.
+
+- Nice touch for comfort when using the app at night.
+
+Dashboard View
+
+- A small summary screen with total plants, recent harvests, and pending tasks.
+
+- Icons / Visuals
+
+- Add little crop/task icons for a more inviting UI.
+
+- Could use emoji or lightweight image assets.
+
+🔮 Future-Proofing / Advanced
+
+- Environmental Module Hooks (Arduino / Sensors)
+
+- Placeholder in code for future sensor readings (soil moisture, temperature, humidity).
+
+- Store readings in the same SQLite DB for later integration.
+
+- Sync with Cloud or Local JSON
+
+- Option to export a farm.json that could be synced to another device running Solace.
+
+- User Profiles / Multi-User Support
+
+- Allow different users to log in with their own farming journals.
+
 ----------------------------------------------------
 12. Contributing
 ----------------------------------------------------
