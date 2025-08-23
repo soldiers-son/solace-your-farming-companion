@@ -10,10 +10,9 @@ This project took around a solid 3 months to arrive at what i would say finished
 And a big thank you to all the strangers across the web that have unknowingly been apart of this project. It's made me realize how connected we are here in the 21st century, and how lucky we are to have so many solutions available right in the palm of our hand. Collaboration, contribution, and connection is the only route to salvation. We need each other more than we know.
 
 
-# solace-your-farming-companion
-====================================================
+=
         Solace – Farming Task Tracker + Ollama GUI
-====================================================
+=
 
 Author: soldiers_son
 
