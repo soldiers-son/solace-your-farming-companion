@@ -380,36 +380,64 @@ def launch_ollama_gui():
 def button_function1():
     T =plant1.get()
     A = plant2.get()
-    c.execute("""
-    INSERT INTO plant(type, amount, date)
-    VALUES(?,?,?)
-    """, (T, A, timestamp))
-    conn.commit()
-    messagebox.showinfo('Congrats!', 'Data entry successful.')
-    plant1.delete(0, END)
-    plant2.delete(0, END)
+    if len(T) == 0:
+        messagebox.showerror("ERROR", "Please enter Plant Type.")
+        return
+    if len(A) == 0:
+        messagebox.showerror("ERROR", "Please enter Amount")
+        return
+    try:
+        c.execute("""
+        INSERT INTO plant(type, amount, date)
+        VALUES(?,?,?)
+        """, (T, A, timestamp))
+        conn.commit()
+        messagebox.showinfo('Congrats!', 'Data entry successful.')
+        plant1.delete(0, END)
+        plant2.delete(0, END)
+    except Exception as e:
+        messagebox.showerror("Database Error", f"An error occurred:\n{e}")
     
 def button_function2():
     T = h1.get()
     A = h2.get()
-    c.execute("""
-    INSERT INTO harvest(type, amount, date)
-    VALUES(?,?,?)
-    """, (T, A, timestamp))
-    conn.commit()
-    messagebox.showinfo('Congrats!', 'Data entry successful.')
-    h1.delete(0, END)
-    h2.delete(0, END)
+    if len(T) == 0:
+        messagebox.showerror("ERROR", "Please enter Plant Type.")
+        return
+    if len(A) == 0:
+        messagebox.showerror("ERROR", "Please enter Amount")
+        return
+    try:
+        c.execute("""
+        INSERT INTO harvest(type, amount, date)
+        VALUES(?,?,?)
+        """, (T, A, timestamp))
+        conn.commit()
+        messagebox.showinfo('Congrats!', 'Data entry successful.')
+        h1.delete(0, END)
+        h2.delete(0, END)
+    except Exception as e:
+            messagebox.showerror("Database Error", f"An error occurred:\n{e}")
+
     
 def button_function3():
-    T = task3.get("1.0",END)
-    c.execute("""
-    INSERT INTO task_tracker(name, date, task)
-    VALUES(?,?,?)
-    """, (current_user, timestamp, T))
-    conn.commit()
-    messagebox.showinfo('Congrats!', 'Data entry successful.')
-    task3.delete("1.0",END)
+    T = task3.get("1.0", END).strip()  # remove whitespace/newline
+    if not T:
+        messagebox.showerror("ERROR", "Please enter Task Completed.")
+        return
+    
+    timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")  # create timestamp
+    
+    try:
+        c.execute("""
+            INSERT INTO task_tracker(name, date, task)
+            VALUES(?,?,?)
+        """, (current_user, timestamp, T))
+        conn.commit()
+        messagebox.showinfo('Congrats!', 'Data entry successful.')
+        task3.delete("1.0", END)
+    except Exception as e:
+        messagebox.showerror("Database Error", f"An error occurred:\n{e}")
 
 def clear_plant():
     plant1.delete(0, END)
