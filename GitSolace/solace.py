@@ -45,7 +45,7 @@ SESSION_FILE = "session.json"
 # Current date and time
 timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
-__version__ = 1.0
+__version__ = 1.1
 my_url = 'https://github.com/soldiers-son/solace-your-farming-companion'
 
 ### Main Functions
