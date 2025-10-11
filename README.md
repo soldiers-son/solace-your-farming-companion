@@ -16,7 +16,7 @@ And a big thank you to all the strangers across the web that have unknowingly be
 
 Author: soldiers_son
 
-solace.py Version: 1.0
+solace.py Version: 1.1
 
 ollama_gui.py Version: 1.3
 
